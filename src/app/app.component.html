@@ -1,2 +1,4 @@
-<img [src]="imgUrl" />
+<input type="text" (keyup)="changeImage($event)" [value]="imgUrl">
+
+<app-post [img]="imgUrl" (imgSelected)="logImage($event)"></app-post>
 <h1>Hello World {{name}}</h1>
